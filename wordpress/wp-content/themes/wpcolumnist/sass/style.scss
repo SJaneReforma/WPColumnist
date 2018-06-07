@@ -1,0 +1,66 @@
+/*
+Theme Name: Columnist Boostrap 4 Theme
+Theme URI: 
+Author: Abby
+Author URI: 
+Description: A basic theme using the Bootstrap framework.
+Version: 1.0
+Text Domain: columnistbootstrap
+*/
+
+$footer-text:#fff;
+$footer-size:14px;
+$readmore-color:#ff9900;
+hr{
+	margin:0!important;
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+.readmore a {
+	color:$readmore-color!important;
+}
+
+.box {
+    padding: 0 5px 0 35px;
+}
+
+footer {
+  background-color: #000;
+  color:$footer-text;
+  font-size:$footer-size;
+  height:70px;
+  padding-top:30px;
+}
+
+/* Bootstrap 4 text input with search icon */
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+    border-radius:20px;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+
+}
+
+.up {    
+	
+	margin-top: -54px;
+}
+
+.up2 {    
+	
+	margin-top: -92px;
+}

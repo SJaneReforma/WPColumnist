@@ -1,0 +1,197 @@
+/*
+Theme Name: Columnist Child Theme
+Theme URI: 
+Author: Jane
+Author URI: 
+Description: A basic theme using the Bootstrap framework.
+Version: 1.0
+Text Domain: columnistbootstrap
+*/
+
+$footer-text:#fff;
+$footer-size:14px;
+$readmore-color:#ff9900;
+
+body {font-family: Arial, Helvetica, sans-serif;
+overflow-x: hidden;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    display: inline-block;
+    border: 1px solid #ced4da;
+}
+
+.email, .pass, .respass {
+     padding: 15px;
+     margin: 5px 0 22px 0;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.cancelbtn, .signupbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto;
+    background-color: #474e5d;
+    padding-top: 50px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; 
+    border: 1px solid #888;
+    width: 50%;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+ 
+
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+hr{
+	margin:0!important;
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+.readmore a {
+	color:$readmore-color!important;
+}
+
+.box {
+    padding: 0 5px 0 35px;
+}
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+    border-radius:20px;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+
+}
+
+.up {    
+	
+	margin-top: -54px;
+}
+
+.up2 {    
+	
+	margin-top: -92px;
+}
+
+footer {
+  background-color: #000;
+  color:$footer-text;
+  font-size:$footer-size;
+  height:70px;
+  padding-top:30px;
+}
+
+.navbar-light .navbar-nav .active>.nav-link
+{
+    color:rgba(0,0,0,.5)!important;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+    float: left;
+    width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+     background-color: white;
+     padding: 20px;
+     margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
+
